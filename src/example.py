@@ -1,16 +1,12 @@
 import os
 import sys
-import argparse
+from cyberyozh_utils.time_utils import get_current_time
+from cyberyozh_utils.ip_utils import get_public_ip
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Application that prints out text report data. '
-                                                 'To redirect output to file.txt, use > file.txt')
-    parser.add_argument('--language',
-                        help='Language of the text report',
-                        choices=["EN", "RU", "CN"],
-                        default='EN',
-                        required=False)
+    print(f"Current Unix time: {get_current_time()}")
+    print(f"My public IP: {get_public_ip()}")
     return 0
 
 
