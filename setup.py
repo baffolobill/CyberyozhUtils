@@ -13,7 +13,7 @@ README = (HERE / 'README.md').read_text(encoding='utf-8')
 DEPENDENCIES = []
 
 setup(
-    name="cyberyozh-utils",
+    name="cyberyozh_utils",
     version="1.0.0",
     author="Yurii Cherkasov",
     author_email="yurii.cherkasov@antidetect.online",
@@ -29,7 +29,7 @@ setup(
         "License :: Commercial",
         "Operating System :: OS Independent",
     ],
-    packages=["cyberyozh-utils"],
+    packages=["cyberyozh_utils"],
     package_dir={"": "src"},
     python_requires=">=3.7",
     include_package_data=True,
