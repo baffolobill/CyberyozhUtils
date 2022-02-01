@@ -10,7 +10,7 @@ HERE = pathlib.Path(__file__).parent.resolve()
 # The text of the README file
 README = (HERE / 'README.md').read_text(encoding='utf-8')
 
-DEPENDENCIES = []
+DEPENDENCIES = ["requests"]
 
 setup(
     name="cyberyozh_utils",
