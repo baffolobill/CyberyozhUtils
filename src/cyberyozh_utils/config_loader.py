@@ -4,7 +4,8 @@ import os
 import pathlib
 from distutils.dir_util import copy_tree
 
-from log_helper import logger
+from .log_helper import logger
+
 PROJECT_DIR = os.path.join(os.path.realpath(__file__), "..")
 HOME_DIR = os.path.join(pathlib.Path.home())
 

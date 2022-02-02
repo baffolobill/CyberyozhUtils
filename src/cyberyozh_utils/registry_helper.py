@@ -1,8 +1,7 @@
-import logging
-import log_helper
 import winreg
 import enum
-from system_utils import is_x64os
+
+from .system_utils import is_x64os
 
 
 __doc__ = """File contains registry-related functions, for creating, enumerating, editing and removing Windows 
