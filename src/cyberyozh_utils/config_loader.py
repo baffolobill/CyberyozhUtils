@@ -4,7 +4,6 @@ import os
 import pathlib
 from distutils.dir_util import copy_tree
 
-from log_helper import logger
 PROJECT_DIR = os.path.join(os.path.realpath(__file__), "..")
 HOME_DIR = os.path.join(pathlib.Path.home())
 
@@ -39,7 +38,6 @@ class ConfigLoader:
         Path to HOME config dir and where config files should come from
         """
         self.home_dir = os.path.join(pathlib.Path.home())
-        logger.info(f"Config home dir: {self.home_dir}")
 
     def install_default_config(self, config_dir, source_dir):
         """
