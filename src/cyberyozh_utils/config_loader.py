@@ -23,7 +23,7 @@ def load_config_path(self, config_dir, config_filename):
     """
     config_path = os.path.join(home_dir(), config_dir, config_filename)
     if not os.path.isfile(config_path):
-        raise FileNotFoundError(f"File {config_filename} is not found in {self.home_dir}")
+        raise FileNotFoundError(f"File {config_filename} is not found in {config_path}")
     return config_path
 
 
