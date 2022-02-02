@@ -40,7 +40,7 @@ class ConfigLoader:
         Path to HOME config dir and where config files should come from
         """
         self.home_dir = os.path.join(pathlib.Path.home())
-        logger.info(f"Config home dir: {self.home_dir}")
+        logger.info("Config home dir: %s", self.home_dir)
 
     def install_default_config(self, config_dir, source_dir):
         """
